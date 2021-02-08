@@ -12,5 +12,9 @@ jobs:
         run: |
           node -v
           npm -v
-
+      - name: Checkout
+        uses: "actions/checkout@v1"
+      - name: List checked out files
+        run:
+          ls -al
 
